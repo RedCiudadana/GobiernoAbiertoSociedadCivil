@@ -1,0 +1,37 @@
+{{#bs-navbar
+  backgroundColor="primary"
+  type="light"
+  position="fixed-top" 
+  fluid=false
+as |navbar|
+}}
+  <div class="navbar-header">
+    {{navbar.toggle}}
+
+    {{#link-to "application" class="navbar-brand"}}
+      <img
+        src="logo-brand.png"
+        class="img-responsive"
+        title={{nombreApp}}
+        alt="Congreso"
+      >
+    {{/link-to}}
+  </div>
+
+  {{#navbar.content}}
+    {{#navbar.nav justified=true type="pills" class="ml-auto" as |nav|}}
+      {{#nav.item active=false}}
+        <a href="#start">Inicio</a>
+      {{/nav.item}}
+      {{#nav.item active=false}}
+        <a href="#about">¿Qué es?</a>
+      {{/nav.item}}
+      {{#nav.item active=false}}
+        <a href="#cart">Carta</a>
+      {{/nav.item}}
+      {{#nav.item active=false}}
+        <a href="#evidences">Evidencia</a>
+      {{/nav.item}}
+    {{/navbar.nav}}
+  {{/navbar.content}}
+{{/bs-navbar}}
