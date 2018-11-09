@@ -28,17 +28,30 @@ $dark-light: #808184;
 body {
   font-family: 'Montserrat';
   color: #717984;
-  padding-top: 73px;
+  padding-top: 65px;
 }
 
 // Nabvar
 
-.navbar-nav li a {
-  color: white;
-  font-weight: lighter;
-  text-transform: uppercase;
-  margin-left: 2rem;
-  margin-right: 2rem;
+.navbar {
+  height: 65px;
+}
+
+.navbar-nav {
+  li a {
+    color: white;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.navbar-brand {
+  img {
+    width: 200px;
+    height: 100%;
+  }
 }
 
 // Header
