@@ -10,7 +10,7 @@ as |navbar|
 
     {{#link-to "application" class="navbar-brand"}}
       <img
-        src="logo-brand.png"
+        src="logo-brand-en.png"
         class="img-responsive"
         title={{nombreApp}}
         alt="Congreso"
@@ -21,16 +21,16 @@ as |navbar|
   {{#navbar.content}}
     {{#navbar.nav justified=true type="pills" class="ml-auto" as |nav|}}
       {{#nav.item active=false}}
-        <a href="#start">Inicio</a>
+        <a href="#start">Home</a>
       {{/nav.item}}
       {{#nav.item active=false}}
-        <a href="#about">¿Qué es?</a>
+        <a href="#about">About</a>
       {{/nav.item}}
       {{#nav.item active=false}}
-        <a href="#cart">Carta</a>
+        <a href="#cart">Cart</a>
       {{/nav.item}}
       {{#nav.item active=false}}
-        <a href="#evidences">Evidencia</a>
+        <a href="#evidences">Evidence</a>
       {{/nav.item}}
       {{#nav.item active=false}}
         {{link-to "ES" "index"}}
