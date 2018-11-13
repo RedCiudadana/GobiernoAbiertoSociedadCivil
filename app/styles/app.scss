@@ -115,6 +115,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  img.vertical {
+    width: auto;
+    max-height: 100px;
+  }
 }
 
 @include media-breakpoint-up(md) {
